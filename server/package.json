@@ -1,0 +1,19 @@
+{
+  "name": "nodejsmongoreact",
+  "version": "1.0.0",
+  "description": "For mother of Thanos",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BestevenS/nodeJsMongoReact.git"
+  },
+  "author": "besteven",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BestevenS/nodeJsMongoReact/issues"
+  },
+  "homepage": "https://github.com/BestevenS/nodeJsMongoReact#readme"
+}
