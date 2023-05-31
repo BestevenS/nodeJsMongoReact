@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/BestevenS/nodeJsMongoReact/issues"
   },
-  "homepage": "https://github.com/BestevenS/nodeJsMongoReact#readme"
+  "homepage": "https://github.com/BestevenS/nodeJsMongoReact#readme",
+  "dependencies": {
+    "mongoose": "^7.2.2"
+  }
 }
