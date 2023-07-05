@@ -2,7 +2,8 @@ import React from "react";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
 import Home from "./Home";
 import SearchPage from "./SearchPage";
-// Προσθέστε άλλες εισαγωγές εδώ όταν δημιουργήσετε τις σελίδες
+import PropertyPage from "./PropertyPage";
+import UserPage from "./UserPage";
 
 function App() {
   return (
@@ -10,7 +11,8 @@ function App() {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/search" component={SearchPage} />
-        {/* Προσθέστε άλλα routes εδώ όταν δημιουργήσετε τις σελίδες */}
+        <Route path="/property" component={PropertyPage} />
+        <Route path="/user" component={UserPage} />
       </Switch>
     </Router>
   );
