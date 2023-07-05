@@ -11,9 +11,9 @@ router.post('/register', userController.registerUser);
 router.post('/login', userController.loginUser);
 
 // Προφίλ χρήστη
-router.get('/profile', userController.getUserProfile);
+router.get('/profile', auth, userController.getUserProfile);
 
 // Ενημέρωση προφίλ χρήστη
-router.put('/profile', userController.updateUserProfile);
+router.put('/profile', auth, userController.updateUserProfile);
 
 module.exports = router;
