@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 // Εισαγωγή των απαραίτητων βιβλιοθηκών
 const express = require('express');
 const mongoose = require('mongoose');
