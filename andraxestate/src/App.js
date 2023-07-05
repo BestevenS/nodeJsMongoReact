@@ -1,6 +1,6 @@
 import React from "react";
-import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Home from "./Home";
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import Home from "./components/Home";
 import SearchPage from "./SearchPage";
 import PropertyPage from "./PropertyPage";
 import UserPage from "./UserPage";
@@ -8,12 +8,12 @@ import UserPage from "./UserPage";
 function App() {
   return (
     <Router>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route path="/search" component={SearchPage} />
-        <Route path="/property" component={PropertyPage} />
-        <Route path="/user" component={UserPage} />
-      </Switch>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/property" element={<PropertyPage />} />
+        <Route path="/user" element={<UserPage />} />
+      </Routes>
     </Router>
   );
 }
