@@ -3,18 +3,18 @@ const router = express.Router();
 const propertyController = require('../controllers/propertyController');
 
 // Όλα τα ακίνητα
-router.get('/properties', propertyController.getAllProperties);
+router.get('/', propertyController.getAllProperties);
 
 // Εισαγωγή νέου ακινήτου
-router.post('/properties', propertyController.createProperty);
+router.post('/', propertyController.createProperty);
 
 // Εμφάνιση συγκεκριμένου ακινήτου βάση ID
-router.get('/properties/:id', propertyController.getPropertyById);
+router.get('/:id', propertyController.getPropertyById);
 
 // Ενημέρωση συγκεκριμένου ακινήτου βάση ID
-router.put('/properties/:id', propertyController.updatePropertyById);
+router.put('/:id', propertyController.updatePropertyById);
 
 // Διαγραφή συγκεκριμένου ακινήτου βάση ID
-router.delete('/properties/:id', propertyController.deletePropertyById);
+router.delete('/:id', propertyController.deletePropertyById);
 
 module.exports = router;
