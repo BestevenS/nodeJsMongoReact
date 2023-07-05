@@ -1,13 +1,16 @@
 const jwt = require('jsonwebtoken');
 
 module.exports = function(req, res, next) {
-  // Διάβασμα του token από την κεφαλίδα
-  const token = req.header('Authorization');
+  // Διάβασμα της κεφαλίδας Authorization
+  const authHeader = req.header('Authorization');
 
-  // Έλεγχος αν το token υπάρχει
-  if (!token) {
+  // Έλεγχος αν η κεφαλίδα Authorization υπάρχει
+  if (!authHeader) {
     return res.status(401).json({ message: 'Απαιτείται πιστοποίηση' });
   }
+
+  // Εξαγωγή του token από την κεφαλίδα Authorization
+  const token = authHeader.split(' ')[1]; 
 
   try {
     // Επαλήθευση του token
