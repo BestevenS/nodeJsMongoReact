@@ -1,9 +1,10 @@
 import React from "react";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import Home from "./components/Home";
-import SearchPage from "./SearchPage";
-import PropertyPage from "./PropertyPage";
-import UserPage from "./UserPage";
+import SearchPage from "./components/SearchPage";
+import PropertyPage from "./components/PropertyPage";
+import UserPage from "./components/UserPage";
+
 
 function App() {
   return (
