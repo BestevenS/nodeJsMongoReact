@@ -10,10 +10,10 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" component={HomePage} />
-        <Route path="/search" component={SearchPage} />
-        <Route path="/property/:id" component={PropertyDetailsPage} />
-        <Route path="/user/:id" component={UserPage} />
+        <Route exact path="/" element={<HomePage />} />
+        <Route path="/search" element={<SearchPage />} />
+        <Route path="/property/:id" element={<PropertyDetailsPage />} />
+        <Route path="/user/:id" element={<UserPage />} />
       </Routes>
     </Router>
   );
