@@ -1,4 +1,4 @@
-FROM node:18.16.1
+FROM node:latest
 
 COPY package.json /app/
 COPY src /app/
