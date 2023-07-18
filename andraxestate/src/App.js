@@ -1,21 +1,24 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
-import HomePage from './components/HomePage';
-import SearchPage from './components/Search/SearchPage';
-import PropertyDetailsPage from './components/Property/PropertyPage';
-import UserPage from './components/User/UserPage';
+import logo from './logo.svg';
+import './App.css';
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route path="/search" element={<SearchPage />} />
-        <Route path="/property/:id" element={<PropertyDetailsPage />} />
-        <Route path="/user/:id" element={<UserPage />} />
-      </Routes>
-    </Router>
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
   );
 }
 
