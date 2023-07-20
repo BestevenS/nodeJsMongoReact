@@ -3,11 +3,11 @@ const router = express.Router();
 const userController = require('../controllers/userController');
 const auth = require('../middlewares/auth');
 
-// Εγγραφή χρήστη
-router.post('/register', userController.createUser);
-
 // Σύνδεση χρήστη
 router.post('/login', userController.loginUser);
+
+// Εγγραφή χρήστη
+router.post('/register', userController.createUser);
 
 // Προφίλ χρήστη
 router.get('/profile', auth, userController.getUser);
