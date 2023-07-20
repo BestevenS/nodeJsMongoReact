@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const userController = require('../controllers/userController');
-const auth = require('../middlewares/auth');
+const userController = require('../controllers/userController.js');
+const auth = require('../middlewares/auth.js');
 
 // Σύνδεση χρήστη
 router.post('/login', userController.loginUser);

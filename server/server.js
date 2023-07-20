@@ -6,8 +6,8 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 // Εισαγωγή των routes
-const usersRouter = require('./routes/usersRoutes');
-const propertyRouter = require('./routes/propertyRoutes'); // Προσθήκη του propertyRoutes
+const usersRouter = require('./routes/usersRoutes.js');
+const propertyRouter = require('./routes/propertyRoutes.js'); // Προσθήκη του propertyRoutes
 
 // Σύνδεση με την MongoDB
 mongoose.connect('mongodb://localhost/real_estate_db', {

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const propertyController = require('../controllers/propertyController');
+const propertyController = require('../controllers/propertyController.js');
 
 // Όλα τα ακίνητα
 router.get('/', propertyController.getProperties);
