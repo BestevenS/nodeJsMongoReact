@@ -1,0 +1,2 @@
+JWT_SECRET='75e73f64619247e53d027a9447c8c8f02ace772c7957bddbd90783b24836b7af4888f9f1016cfc251134ceb0accc97ad2497c1a01252c856b2582a260e34ef17'
+MONGODB_URI='mongodb+srv://Besteven:Nq7lXem6GN1SRU5o@myestate.ztzz6rw.mongodb.net/?retryWrites=true&w=majority'

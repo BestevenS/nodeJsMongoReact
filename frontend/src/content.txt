@@ -1,0 +1,23 @@
+src
+-assets
+--(αρχεία φωτογραφιών)
+-axios
+--(αρχεία για axios)
+-components
+--admins
+---(αρχεια για admins)
+--Navbar
+---(αρχεια για navbar)
+--properties
+---(αρχεια για properties)
+--users
+---(αρχεια για users)
+--Home
+---(αρχεια για Home)
+--Logout.js
+-context
+--(αρχεία για context)
+-App.js
+-index.css
+-index.js
+-Router.js

@@ -1,0 +1,145 @@
+.property-edit-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.property-edit-container {
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    padding-top: 6%;
+}
+
+.property-edit-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.property-edit-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.property-edit-label {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #666;
+}
+
+.property-edit-input,
+.property-edit-textarea,
+.property-edit-select {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.property-edit-textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.property-dropzone {
+    padding: 15px;
+    border: 1px dashed #bbb;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.property-dropzone:hover {
+    background-color: #a4b0be;
+}
+
+.property-photos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.property-photo {
+    position: relative;
+}
+
+.property-image {
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.property-image:hover {
+    transform: scale(1.1);
+}
+
+.btn {
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+
+.submit-btn {
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.delete-btn,
+.cancel-delete-btn {
+    position: absolute;
+    bottom: 5px;
+    left: 5px;
+    background-color: #2c3e50;
+    color: #fff;
+}
+
+.cancel-delete-btn {
+    background-color: #2c3e50;
+}
+
+.submit-btn:hover {
+    background-color: #2c3e50;
+}
+
+.delete-btn:hover,
+.cancel-delete-btn:hover {
+    background-color: #2c3e50;
+}
+
+.delete-button {
+    background-color: rgb(226, 0, 0);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.delete-button:hover {
+    background-color: darkred;
+}
+
+.delete-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .property-edit-container {
+        padding-top: 15%;
+    }
+}

@@ -1,0 +1,35 @@
+δομη back-end
+
+controllers
+-adminController.js
+-propertyController.js
+-userController.js
+
+middlewares
+-auth.js
+-uploadMiddleware.js
+
+models
+-Admin.js
+-Property.js
+-User.js
+
+routes
+-adminRoutes.js
+-propertyRoutes.js
+-userRoutes.js
+
+services
+-adminService.js
+-cryptoService.js
+-propertyService.js
+-userService.js
+
+uploads
+-(ολες οι φωτογραφιες ακινήτων)
+
+utils
+-cryptoUtil.js
+
+.env
+app.js

@@ -1,0 +1,79 @@
+.card-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.card-media-root {
+  position: relative;
+  height: 200px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.camera-icon, .photo-overlay span {
+    color: rgb(255, 255, 255);
+}
+
+.camera-icon {
+    margin-right: 10%;
+}
+
+.photo-overlay {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.card-content-root {
+  padding: 1rem;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: normal;
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+.card-description {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card-price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2c7be5; /* Change color based on your preference */
+  margin-bottom: 0.5rem;
+}
+
+.card-location {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card-area {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.card-status {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #e63946; /* Change color based on your preference */
+  margin-bottom: 0.5rem;
+}
